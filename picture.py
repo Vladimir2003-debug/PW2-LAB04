@@ -46,7 +46,10 @@ class Picture:
     return Picture(joinImg)
 
   def up(self, p):
-    return Picture(None)
+    """Devuelve una nueva figura poniendo la figura p debajo de
+       la figura actual """
+    upImg = self.img + p.img
+    return Picture(upImg)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
