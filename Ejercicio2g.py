@@ -12,4 +12,7 @@ sqKnight2 = square.negative().under(knight)
 sqRock2 = square.under(rock)
 
 linePieces = sqRock.join(sqKnight).join(sqBishop).join(sqQueen).join(sqKing).join(sqBishop2).join(sqKnight2).join(sqRock2)
-draw(linePieces)
+
+linePawns = square.under(pawn).join(square.negative().under(pawn)).horizontalRepeat(4)
+
+draw(linePawns)
