@@ -15,4 +15,6 @@ linePieces = sqRock.join(sqKnight).join(sqBishop).join(sqQueen).join(sqKing).joi
 
 linePawns = square.under(pawn).join(square.negative().under(pawn)).horizontalRepeat(4)
 
-draw(linePawns)
+lineTable = square.join(square.negative()).horizontalRepeat(4)
+
+draw(lineTable)
