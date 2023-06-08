@@ -17,4 +17,6 @@ linePawns = square.under(pawn).join(square.negative().under(pawn)).horizontalRep
 
 lineTable = square.join(square.negative()).horizontalRepeat(4)
 
-draw(lineTable)
+table = lineTable.up(lineTable.negative()).verticalRepeat(2)
+
+draw(table)
