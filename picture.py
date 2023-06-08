@@ -1,7 +1,7 @@
 from colors import *
 class Picture:
   def __init__(self, img):
-    self.img = img;
+    self.img = img
 
   def __eq__(self, other):
     return self.img == other.img
@@ -73,5 +73,16 @@ class Picture:
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
     o antihorario"""
-    return Picture(None)
+    length = len(self.img)
+    rotateImg = []
+
+    for i in range(length):
+      rotateLine = ""  
+      for line in self.img:
+        rotateLine += line[i]
+      rotateImg.append(rotateLine)
+      
+    print(rotateImg)
+
+    return Picture(rotateImg)
 
