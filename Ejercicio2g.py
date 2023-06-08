@@ -19,4 +19,4 @@ lineTable = square.join(square.negative()).horizontalRepeat(4)
 
 table = lineTable.up(lineTable.negative()).verticalRepeat(2)
 
-draw(table)
+draw(linePieces.negative().img + linePawns.negative().img + table.img + linePawns.img + linePieces.img)
